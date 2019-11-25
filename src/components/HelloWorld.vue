@@ -1,9 +1,11 @@
 
-<template>
+<template height="100%" width="100%">
 
-  <v-app id="inspire" >
+  <v-app id="inspire" height="100%" width="100%" >
      
-  <div :style="{'height':'100%','background-image':'url(https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg)'}">
+ <v-parallax height="100%" width="100%"
+     src="@/assets/back.png"
+    >
     <v-content >
 
       <v-container
@@ -26,9 +28,9 @@
         
       <v-card-img class="justify-center">
           <v-img
-         src="@/assets/EPC-Groupe-Logo2.png" 
-          max-width="120"
-        max-height="250" 
+         src="@/assets/logo1.png" 
+          width="200"
+        height="260" 
              
            ></v-img>
 
@@ -42,7 +44,7 @@
           justify-center
         >
           <v-flex
-            xs6
+            xs8
             sm4
             md4
           >
@@ -51,13 +53,13 @@
               
               <v-form>
                   
-                  <v-text-field
+                  <v-text-field 
                     id="login"
                     label="NOMBRE DE USUARIO"
                     validate="required"
                     name="login"
                     type="text"
-                    filled
+                    solo
                     rounded
                     outlined
                   />
@@ -68,7 +70,7 @@
                     label="CONTRASEÑA"
                     name="password"
                     type="password"
-                    filled
+                    solo
                     rounded
                     outlined
                   />
@@ -113,7 +115,7 @@
             
       </v-container>
     </v-content>
-      </div>
+      </v-parallax>
   </v-app>
 
 </template>

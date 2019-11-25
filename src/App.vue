@@ -3,17 +3,18 @@
     <v-content>
       <HelloWorld/>
       <vistageneral/>
+      <RegistroGDO/>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import RegistroGDO from './components/RegistroGDO';
 export default {
   name: 'App',
 
   components: {
-   HelloWorld,
+   RegistroGDO,
   },
 
   data: () => ({

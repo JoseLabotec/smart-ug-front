@@ -1,8 +1,7 @@
-<template>
-    <v-app id="inspire">
-        <div :style="{'height':'100%','background-image':'url(https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg)'}">
-          
-            <v-content>
+<template height="100%" width="100%">
+    <v-app id="inspire" height="1000" width="1000" >
+           <v-parallax height="100%" width="100%" src="@/assets/back.png">
+            <v-content height="1000" width="1000">
                 <v-container    
                     fill-height>
                     <v-layout
@@ -10,14 +9,14 @@
                         <card>
                             <v-card-img >
                                 <v-img
-                                    width="10%"
-                                    height="20%">
+                                    width="20%"
+                                    height="30%">
                                 </v-img>
                             </v-card-img>
                             <v-card-img >
                                 <v-img
-                                    src="@/assets/EPC-Groupe-Logo2.png" 
-                                    max-width="250"
+                                    src="@/assets/logo3.png" 
+                                    max-width="400"
                                    >
                                     </v-img>
                             </v-card-img>
@@ -25,11 +24,10 @@
                     </v-layout>
                     <v-layout
                         class="fill-height ma-0 "
-
                         >
                         <card>
                             <div class="col-lg-12">
-                                <div class="m-50" style="margin:10%" @click="clickMethod">
+                                <div  style="margin:15%">
                                     <v-card-img >
                                         <a href="#">
                                             <v-img
@@ -44,7 +42,7 @@
                                     </div>
                                 </div>
 
-                                 <div class="m-50" style="margin:10%">
+                                 <div  style="margin:15%">
                                     <v-card-img >
                                     <a href="#">
                                         <v-img
@@ -60,7 +58,7 @@
                                     </div>
                                 </div>
 
-                                 <div class="m-50" style="margin:10%">
+                                 <div class="m-50" style="margin:15%">
                                     <v-card-img >
                                     <a href="#">
                                         <v-img
@@ -81,7 +79,7 @@
                     </v-layout>
                 </v-container>
             </v-content> 
-        </div>
+        </v-parallax>
     </v-app>
 </template>
 

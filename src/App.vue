@@ -1,20 +1,22 @@
 <template>
   <v-app>
     <v-content>
-      <HelloWorld/>
-      <vistageneral/>
+      <Login/>
+      <menuPrincipal/>
       <RegistroGDO/>
+      <RegistroUGP/>
+      <RegistroUGEF/>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import RegistroGDO from './components/RegistroGDO';
+import menuPrincipal from './components/menuPrincipal';
 export default {
   name: 'App',
 
   components: {
-   RegistroGDO,
+   menuPrincipal,
   },
 
   data: () => ({
